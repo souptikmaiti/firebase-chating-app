@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.firebasechatingapp.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.firebasechatingapp.ui.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.firebasechatingapp.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.firebasechatingapp.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_newChatFragment"
+            app:destination="@id/newChatFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_chatingFragment"
+            app:destination="@id/chatingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.firebasechatingapp.ui.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newChatFragment"
+        android:name="com.example.firebasechatingapp.ui.NewChatFragment"
+        android:label="fragment_new_chat"
+        tools:layout="@layout/fragment_new_chat" >
+        <action
+            android:id="@+id/action_newChatFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_newChatFragment_to_chatingFragment"
+            app:destination="@id/chatingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatingFragment"
+        android:name="com.example.firebasechatingapp.ui.ChatingFragment"
+        android:label="fragment_chating"
+        tools:layout="@layout/fragment_chating" >
+        <action
+            android:id="@+id/action_chatingFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_chatingFragment_to_newChatFragment"
+            app:destination="@id/newChatFragment" />
+    </fragment>
+</navigation>

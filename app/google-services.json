@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "91909496406",
+    "firebase_url": "https://fir-chatingapp-d26dc.firebaseio.com",
+    "project_id": "fir-chatingapp-d26dc",
+    "storage_bucket": "fir-chatingapp-d26dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91909496406:android:eca695fc526bcb321f25f7",
+        "android_client_info": {
+          "package_name": "com.example.firebasechatingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91909496406-bmul7btkehq9sc9vp5o702vfklhem9oc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasechatingapp",
+            "certificate_hash": "960b88772094a477fba86573ba11ecfa70223ee9"
+          }
+        },
+        {
+          "client_id": "91909496406-6ee4gqag4a9qm1mmg7d7fdb31nm4sbia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHJpRRES9UQ2gn5XabDnBzDf_2LbNgR70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91909496406-6ee4gqag4a9qm1mmg7d7fdb31nm4sbia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

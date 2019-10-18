@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userViewModel"
+            type="com.example.firebasechatingapp.viewmodel.UserViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_light"
+        android:padding="10dp"
+        tools:context=".ui.RegistrationFragment">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Fragment"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_face"/>
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:hint="user name"
+            android:background="@drawable/round_corners_edit_text"
+            android:padding="12dp"
+            android:text="@={userViewModel.userName}"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:hint="email"
+            android:background="@drawable/round_corners_edit_text"
+            android:padding="12dp"
+            android:text="@={userViewModel.email}"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:background="@drawable/round_corners_edit_text"
+            android:padding="12dp"
+            android:text="@={userViewModel.password}"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_con_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_corners_edit_text"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:hint="confirm password"
+            android:text="@={userViewModel.confirmPass}"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Sign Up"/>
+
+        <TextView
+            android:id="@+id/tv_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Already an user? Log In"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</layout>

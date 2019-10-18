@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userViewModel"
+            type="com.example.firebasechatingapp.viewmodel.UserViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".ui.UpdateFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Profile Update Fragment"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_face" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="user name"
+            android:inputType="textPersonName"
+            android:text="@={userViewModel.userName}"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:text="@={userViewModel.email}"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="update user" />
+    </LinearLayout>
+</layout>
